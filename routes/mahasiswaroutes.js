@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mahasiswaController = require('../controllers/mahasiswaController');
-const cekApiKey = require('../middlewares/cekAPIkey');
+const cekApiKey = require('../middlewares/cekApiKey');
 
 router.get('/', mahasiswaController.getAll);
 router.get('/:id', mahasiswaController.getById);
